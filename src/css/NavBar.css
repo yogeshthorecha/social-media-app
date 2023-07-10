@@ -1,0 +1,124 @@
+.navbar{
+    display: flex;
+    width: 100%;
+    background-color:#ff4c67c0;
+    box-shadow: -5px 4px 10px -5px grey;
+    position: fixed;
+    color:white;
+    top: 0;
+    padding:0 10px;
+}
+.nav-header{
+    display: flex;
+    align-items: center;
+    width: 40%;
+}
+.nav-header img{
+    border-radius: 100%;
+    width: 49px;
+    margin-right: 10px;
+}
+.nav-header h1{
+    font-size: 25px;
+}
+.search-bar{
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 40%;
+}
+.search-bar input{
+    background-color:rgb(248, 176, 176);
+    height:4vh ;
+    border:none;
+    padding:4px 20px;
+    border-radius: 20px;
+}
+.search-bar input::placeholder {
+    color:black;
+    opacity: 0.9;
+}
+.search-popup{
+    position: fixed;
+  transition: 200ms ease-out;
+    margin-top: 65px;
+    background-color: #eee8e8;
+    color:black;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    row-gap: 10px;
+    padding: 15px 10px; 
+    overflow-y:scroll ;
+    z-index: 2;
+    box-shadow: 5px 0 5px 0 grey;
+    max-height: 200px;
+}
+.search-popup::-webkit-scrollbar{
+    width: 0;
+}
+.name-username{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: bolder;
+    row-gap: 2px;
+    cursor: pointer;
+  }
+  .suggestion-profile{
+    display: flex;
+    column-gap: 10px;
+    border-bottom:2px solid white;
+    padding-bottom: 10px;
+  }
+  .suggestion-profile img{
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    border: 2px solid #ff4c67;
+    cursor: pointer;
+  }
+.search-popup::before{
+    content:"";
+  position:fixed;
+  top:60px;
+  margin-left: 20px;
+  height: 20px;
+  width: 20px;
+  background: #eee8e8;
+  transform: rotate(45deg);
+}
+@media (min-width: 768px) {
+    .nav-header{
+        display: flex;
+        align-items: center;
+        margin-left: 10px;
+        width: 20%;
+    }
+    .search-popup{
+        position: fixed;
+      transition: 200ms ease-out;
+        color:black;
+        display: flex;
+        align-self: flex-start;
+    }
+  
+  }
+  @media (min-width: 1024px) {
+    .nav-header{
+        display: flex;
+        align-items: center;
+        margin-left: 10px;
+    }
+    .search-popup{
+        position: fixed;
+      transition: 200ms ease-out;
+        color:black;
+        display: flex;
+        align-self: flex-start;
+        z-index: 999;
+    }
+  }  

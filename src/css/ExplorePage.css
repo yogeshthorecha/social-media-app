@@ -1,0 +1,15 @@
+.explore-page{
+    padding: 80px 0;
+}
+@media (min-width: 768px) { 
+  .explore-page{
+    display: flex;
+    justify-content: space-around;
+  }
+}
+@media (min-width: 1024px) { 
+    .explore-page{
+      display: flex;
+      padding: 80px 0 10px 0;
+    }
+  }

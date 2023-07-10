@@ -1,0 +1,114 @@
+
+.login-section-1{
+    display: none;
+}
+.login-section-2{
+    background-color: #ff4c68;
+    color:white;
+}
+.login-header{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    margin-bottom: 50px;
+}
+.login-header img{
+    border-radius: 100%;
+    width: 15%;
+    height: 100%;
+    margin-right: 10px;
+}
+.login-header p{
+    margin-top: -15px;
+    color:rgb(2, 5, 0)
+}
+.login-form .form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+.login-form .form h1{
+    font-size: 30px;
+    margin: auto;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 3px solid white;
+}
+.login-form label {
+     font-size: 20px;
+     margin-bottom: 5px;
+}
+.login-form input{
+    font-size: 15px;
+    padding: 10px 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border:none;
+    height: 4vh;
+}
+.login-form button{
+        height: 40px;
+        border: 1px solid;
+        color:white;
+        font-size: 20px;
+        margin-bottom: 5px;
+        background-color: #ff4c68;
+        border-radius: 10px;
+}
+.login-form button:hover{
+    height: 40px;
+    border: 1px solid;
+    color:black;
+    background-color: white;
+}
+.login-footer{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    padding-bottom: 86px;
+}
+.login-footer label{
+    margin-top: 50px;
+}
+.login-footer a{
+    color:black;
+}
+@media (min-width:768px){
+ 
+}
+@media (min-width:1024px){
+    .login-page{
+        display: flex;
+        flex:1;
+    }
+    .login-section-1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        background-color: #ff4c68;
+    }
+    .login-section-1 img{
+        height: 70vh;
+        transform: rotate(-25deg);
+    }
+    .login-section-2{
+        background-color:white;
+        color:black;
+        width: 50%;
+    }
+    .login-form .form h1{
+        border-bottom: 3px solid black;
+    }
+    .login-form input{
+        border:1px solid #ff4c68;
+    }
+    .login-form button:hover{
+        color:black;
+        border:1px solid #ff4c68;
+    }
+}

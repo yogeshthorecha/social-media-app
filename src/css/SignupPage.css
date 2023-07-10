@@ -1,0 +1,123 @@
+.signup-section-1{
+    display: none;
+}
+.signup-section-2{
+    background-color: #ff4c68;
+    color:white;
+}
+.signup-header{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+.signup-header img{
+    border-radius: 100%;
+    width: 15%;
+    height: 100%;
+    margin-right: 10px;
+}
+.signup-header p{
+    margin-top: -15px;
+    color:rgb(2, 5, 0)
+}
+.signup-form .form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+.signup-form .form h1{
+    font-size: 30px;
+    margin: auto;
+    margin-bottom: 50px;
+    padding-bottom: 5px;
+    border-bottom: 3px solid white;
+}
+.signup-form label {
+     font-size: 20px;
+     margin: 10px 5px;
+}
+.signup-form input{
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border:none;
+    height: 6vh;
+    font-size: 1rem;
+    margin: 5px 5px 10px 5px;
+    padding-left:10px;
+}
+.full-name{
+        display:flex;
+        flex-direction:row;
+}
+.input-group {
+    flex:1;  
+    display:flex;
+    flex-direction:column;
+}
+.signup-form button{
+        height: 40px;
+        border: 1px solid;
+        color:white;
+        font-size: 20px;
+        margin-bottom: 5px;
+        background-color: #ff4c68;
+        border-radius: 10px;
+        margin: 10px 5px;
+}
+.signup-form button:hover{
+    height: 40px;
+    border: 1px solid;
+    color:black;
+    background-color: white;
+}
+.signup-footer{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.signup-footer label{
+    margin-top: 20px;
+}
+.signup-footer a{
+    color:black;
+}
+@media (min-width:768px){
+ 
+}
+@media (min-width:1024px){
+    .signup-page{
+        display: flex;
+        flex:1;
+    }
+    .signup-section-1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        background-color: #ff4c68;
+    }
+    .signup-section-1 img{
+        height: 70vh;
+        transform: rotate(25deg);
+    }
+    .signup-form .form h1{
+        border-bottom: 3px solid w;
+    }
+    .signup-section-2{
+        background-color:white;
+        color:black;
+        width: 50%;
+    }
+    .signup-form input{
+        border:1px solid #ff4c68;
+    }
+    .signup-form button:hover{
+        color:black;
+        border:1px solid #ff4c68;
+    }
+}
